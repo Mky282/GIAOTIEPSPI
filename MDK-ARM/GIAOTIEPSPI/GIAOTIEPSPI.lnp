@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"giaotiepspi\startup_stm32f103x6.o"
+"giaotiepspi\main.o"
+"giaotiepspi\stm32f1xx_it.o"
+"giaotiepspi\stm32f1xx_hal_msp.o"
+"giaotiepspi\stm32f1xx_hal_gpio_ex.o"
+"giaotiepspi\stm32f1xx_hal_tim.o"
+"giaotiepspi\stm32f1xx_hal_tim_ex.o"
+"giaotiepspi\stm32f1xx_hal.o"
+"giaotiepspi\stm32f1xx_hal_rcc.o"
+"giaotiepspi\stm32f1xx_hal_rcc_ex.o"
+"giaotiepspi\stm32f1xx_hal_gpio.o"
+"giaotiepspi\stm32f1xx_hal_dma.o"
+"giaotiepspi\stm32f1xx_hal_cortex.o"
+"giaotiepspi\stm32f1xx_hal_pwr.o"
+"giaotiepspi\stm32f1xx_hal_flash.o"
+"giaotiepspi\stm32f1xx_hal_flash_ex.o"
+"giaotiepspi\stm32f1xx_hal_exti.o"
+"giaotiepspi\system_stm32f1xx.o"
+--strict --scatter "GIAOTIEPSPI\GIAOTIEPSPI.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "GIAOTIEPSPI.map" -o GIAOTIEPSPI\GIAOTIEPSPI.axf
